@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.samplespringboot</groupId>
-	<artifactId>springbootwithspringdatajpa</artifactId>
+	<artifactId>springbootwithspringdatajpawithembeddeddatabase</artifactId>
 	<!--<packaging>war</packaging> -->
 	<version>0.0.1</version>
-	<name>springbootwithspringdatajpa</name>
+	<name>springbootwithspringdatajpawithembeddeddatabase</name>
 
 
 	<parent>
