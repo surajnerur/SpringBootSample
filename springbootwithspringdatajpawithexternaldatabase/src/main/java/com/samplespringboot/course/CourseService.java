@@ -16,10 +16,10 @@ public class CourseService {
 	/*private List<Topic> topics = new ArrayList<Topic>(Arrays.asList(new Topic("spring","springframework","spring framewrok desc"),
 			new Topic("corejava","core java","core java desc"))); */
 	
-	public List<Course> getAllCourses() {
+	public List<Course> getAllCourses(String topicId) {
 		//return topics;
 		List<Course> courses = new ArrayList<>();
-		courseRepository.findAll().forEach(courses::add);
+		courseRepository.findByTopicId(topicId).forEach(courses::add);
 		return courses;
 	}
 	
@@ -33,7 +33,7 @@ public class CourseService {
 		courseRepository.save(course);
 	}
 
-	public void updateCourse(Course course, String id) {
+	public void updateCourse(Course course) {
 		/*for(int i=0; i<topics.size();i++) {
 			Topic t = topics.get(i);
 			if(t.getId().equals(id)) {

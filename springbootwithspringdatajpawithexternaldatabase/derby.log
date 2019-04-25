@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Mon Apr 22 20:00:00 IST 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-016a-4574-2453-000009b78000 
-on database directory memory:C:\Suraj\development\SpringBootSample\springbootwithspringdatajpa\testdb with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+Thu Apr 25 18:55:23 IST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-016a-54ac-10d5-00000526f398 
+on database directory memory:C:\Suraj\development\SpringBootSample\springbootwithspringdatajpawithexternaldatabase\testdb with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
 Loaded from file:/C:/Users/nerursur/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_192-b12
-user.dir=C:\Suraj\development\SpringBootSample\springbootwithspringdatajpa
+user.dir=C:\Suraj\development\SpringBootSample\springbootwithspringdatajpawithexternaldatabase
 os.name=Windows 10
 os.arch=amd64
 os.version=10.0
