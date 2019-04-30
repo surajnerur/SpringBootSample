@@ -5,6 +5,7 @@ import javax.ws.rs.ApplicationPath;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.stereotype.Component;
 
+import com.samplespringboot.rest.EmployeeRest;
 import com.samplespringboot.rest.HelloWorld;
 
 @Component
@@ -13,5 +14,6 @@ public class ApplicationConfig extends ResourceConfig {
 
  public ApplicationConfig() {
 	 register(HelloWorld.class);
+	 register(EmployeeRest.class);
  }
 }
