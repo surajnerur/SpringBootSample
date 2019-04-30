@@ -17,7 +17,7 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 @PropertySource({"classpath:${envtarget:test}-environment.properties"})
 public class ApplicationContext {
 
-	//@Bean
+	@Bean
 	public DataSource getDataSource() {
 		BasicDataSource dataSource = new BasicDataSource();
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
@@ -29,8 +29,8 @@ public class ApplicationContext {
 		return dataSource;
 	}
 	
-	//@Bean
-	//@Autowired
+	@Bean
+	@Autowired
 	public LocalSessionFactoryBean getSessionFactory(DataSource dataSource) {
 		LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
 		sessionFactory.setDataSource(dataSource);
@@ -48,8 +48,8 @@ public class ApplicationContext {
 		return properties;
 	}
 	
-	//@Bean
-	//@Autowired
+	@Bean
+	@Autowired
 	public HibernateTemplate getHibernateTemplate(SessionFactory sessionFactory) {
 		return new HibernateTemplate(sessionFactory);
 	}
